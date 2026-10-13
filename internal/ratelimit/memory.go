@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Chiang-Fan/mini-llm-gateway/internal/config"
+	"github.com/Chiang-Fan/llm-gateway/internal/config"
 )
 
 // window 是固定窗口计数器。

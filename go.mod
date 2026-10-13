@@ -1,4 +1,4 @@
-module github.com/Chiang-Fan/mini-llm-gateway
+module github.com/Chiang-Fan/llm-gateway
 
 go 1.21
 

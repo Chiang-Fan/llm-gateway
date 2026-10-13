@@ -1,4 +1,4 @@
-# mini-llm-gateway
+# llm-gateway
 
 一个**最小的大模型网关**：把多家厂商的私有协议统一成 OpenAI 兼容入口，并提供 token 级限流与多上游路由。
 

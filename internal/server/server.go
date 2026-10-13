@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Chiang-Fan/mini-llm-gateway/internal/config"
-	"github.com/Chiang-Fan/mini-llm-gateway/internal/ratelimit"
-	"github.com/Chiang-Fan/mini-llm-gateway/internal/router"
+	"github.com/Chiang-Fan/llm-gateway/internal/config"
+	"github.com/Chiang-Fan/llm-gateway/internal/ratelimit"
+	"github.com/Chiang-Fan/llm-gateway/internal/router"
 )
 
 // Server 是网关的 HTTP 服务。

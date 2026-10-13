@@ -1,4 +1,4 @@
-# mini-llm-gateway 示例配置
+# llm-gateway 示例配置
 listen: ":8080"
 
 upstreams:

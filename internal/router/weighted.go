@@ -4,8 +4,8 @@ import (
 	"context"
 	"math/rand"
 
-	"github.com/Chiang-Fan/mini-llm-gateway/internal/config"
-	"github.com/Chiang-Fan/mini-llm-gateway/internal/protocol"
+	"github.com/Chiang-Fan/llm-gateway/internal/config"
+	"github.com/Chiang-Fan/llm-gateway/internal/protocol"
 )
 
 // weighted 按权重随机挑选上游。

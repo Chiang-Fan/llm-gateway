@@ -8,8 +8,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/Chiang-Fan/mini-llm-gateway/internal/config"
-	"github.com/Chiang-Fan/mini-llm-gateway/internal/protocol"
+	"github.com/Chiang-Fan/llm-gateway/internal/config"
+	"github.com/Chiang-Fan/llm-gateway/internal/protocol"
 )
 
 // ErrNoUpstream 表示没有可用上游。

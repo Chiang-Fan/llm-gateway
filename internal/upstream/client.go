@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Chiang-Fan/mini-llm-gateway/internal/config"
+	"github.com/Chiang-Fan/llm-gateway/internal/config"
 )
 
 // ErrUpstream 表示上游返回了非 2xx。

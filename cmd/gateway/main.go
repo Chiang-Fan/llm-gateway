@@ -1,4 +1,4 @@
-// Command gateway 是 mini-llm-gateway 的入口。
+// Command gateway 是 llm-gateway 的入口。
 //
 // 最小可运行版本：只起 HTTP server 并注册 /healthz 与 /v1/chat/completions 骨架。
 // 协议适配、流式透传、限流与路由在 W43/W44 逐步填充。
@@ -13,8 +13,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/Chiang-Fan/mini-llm-gateway/internal/config"
-	"github.com/Chiang-Fan/mini-llm-gateway/internal/server"
+	"github.com/Chiang-Fan/llm-gateway/internal/config"
+	"github.com/Chiang-Fan/llm-gateway/internal/server"
 )
 
 func main() {
@@ -35,7 +35,7 @@ func main() {
 	errCh := make(chan error, 1)
 	go func() { errCh <- srv.Start() }()
 
-	slog.Info("mini-llm-gateway started", "addr", cfg.Listen)
+	slog.Info("llm-gateway started", "addr", cfg.Listen)
 
 	select {
 	case <-ctx.Done():
