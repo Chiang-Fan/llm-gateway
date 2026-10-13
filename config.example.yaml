@@ -1,0 +1,22 @@
+# mini-llm-gateway 示例配置
+listen: ":8080"
+
+upstreams:
+  - name: openai-main
+    base_url: "https://api.openai.com"
+    protocol: openai
+    api_key: "${OPENAI_API_KEY}"
+    weight: 80
+
+  - name: anthropic-backup
+    base_url: "https://api.anthropic.com"
+    protocol: anthropic
+    api_key: "${ANTHROPIC_API_KEY}"
+    weight: 20
+
+# token 级限流：先放行、后付费（见 docs/decisions.md ADR-001）
+rate_limit:
+  enabled: true
+  window: 1m
+  quota: 100000     # 每窗口 token 配额
+  store: memory     # memory | redis
